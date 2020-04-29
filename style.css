@@ -39,7 +39,6 @@ h2{
 }
 h4{
   text-align: center;
-
 }
 .button{
   width: 50%;
@@ -59,7 +58,6 @@ h4{
 }
 .nav-link{
   margin: 1vh;
-
 }
 .container{
   margin: 1vh 1vw 1vh 1vw;
@@ -71,7 +69,7 @@ h4{
   margin: 1vh 1vw 1vh 1vw;
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 .product_cont{
   color: white;
@@ -86,10 +84,6 @@ h4{
   align-items:center;
   border: #333399 solid;
   border-radius: 10px;  
-  transition: transform 0.5s;
-}
-.product_cont:hover{
- transform:  scale(1.1);
 }
 #header{
   height: 100px;
@@ -133,7 +127,6 @@ h4{
 #video{
   margin: auto;
 }
-
 #values{
   margin: auto;
 }
@@ -158,7 +151,7 @@ h4{
 #footer{
   text-align: center;
 }
-@media (max-width: 520px){
+@media (max-width: 360px){
   p{
     font-size: 14px;
   }
@@ -170,7 +163,6 @@ h4{
     flex-direction: column;
     align-items: center;
   }
- 
   #header-img{
     width: 100px;
   }
