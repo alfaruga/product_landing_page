@@ -13,6 +13,7 @@ ul{
   justify-content: space-evenly;
 }
 li{
+  display: inline;
   list-style: none none;
   font-size: 20px;
 }
@@ -151,7 +152,11 @@ h4{
 #footer{
   text-align: center;
 }
-@media (min-width:200px){
+@media (max-width:600px){
+  bod
+  a{
+    font-size: 1.5em;
+  }
   p{
     font-size: 14px;
   }
@@ -164,7 +169,7 @@ h4{
     align-items: center;
   }
   #header-img{
-    width: 100px;
+    width: 250px;
   }
   #header{
     height: auto;
@@ -173,6 +178,9 @@ h4{
     display: flex;
     align-items: center;
     margin: 0;
+   }
+   h1{
+     font-size: 2.5em;
    }
   .container{
     flex-direction: column;
