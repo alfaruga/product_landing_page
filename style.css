@@ -151,8 +151,7 @@ h4{
 #footer{
   text-align: center;
 }
-@media screen 
-and (device-height: 360px){
+@media (min-width:200px){
   p{
     font-size: 14px;
   }
