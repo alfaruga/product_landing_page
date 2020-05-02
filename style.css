@@ -2,17 +2,23 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
-html {
-  width: 100vw;
-}
 #header {
-  padding: 5px 0;
-  background-color: purple;
+  background-color: #6400ff;
+  width: 100%;
+  height: 17vh;
+  position: fixed;
+  top: 0;
+  z-index: 2;
 }
 #header-img {
   height: 10vh;
+  border: #6400ff 3px solid;
 }
-#nav-bar {
+#features {
+  width: 50vw;
+  margin: auto;
+  padding: 15px;
+  margin: 15px auto;
 }
 #video {
   display: block;
@@ -29,78 +35,11 @@ html {
   margin: 10vh 0;
   height: 70vh;
 }
-.product-cont {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 5px;
-  border: purple 5px solid;
-
-  text-align: center;
-}
-ul {
-  padding-left: 0;
-}
-.nav-link {
-  display: inline;
-}
-.display-3 {
-  margin-top: 10px;
-  padding: 10px 0;
-}
-.mycontainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-button {
-  margin: 0 3px;
-}
-h3 {
-  text-align: left;
-}
-h1 {
-  text-align: center;
-}
-i {
-  padding: 15px;
-  transform: scale(2);
-}
-input {
-  display: block;
-  margin: auto;
-  padding: 5px;
-  margin: 10px auto;
-}
-li {
-  display: inline;
-}
-div > i {
-  color: gold;
-}
-#features {
-  width: 70vw;
-  margin: auto;
-}
-.container-text {
-  text-align: left;
-  font-size: 1.5em;
-  padding-top: 10px;
-}
-
-a {
-  display: inline;
-  text-decoration: none;
-  font-weight: 600;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  padding: 5px;
-  font-size: 1em;
-}
 #residential {
   height: 100%;
   display: flex;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   flex-direction: column;
   justify-content: center;
 }
@@ -108,7 +47,7 @@ a {
   height: 100%;
   display: flex;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   flex-direction: column;
   justify-content: center;
 }
@@ -116,11 +55,10 @@ a {
   height: 100%;
   display: flex;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   flex-direction: column;
   justify-content: center;
 }
-
 #bg1 {
   background: url(/back1.jpg);
 }
@@ -139,7 +77,85 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.icon-title {
+  text-align: left;
+  padding: 5px;
+}
+.product-cont {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  border: cornflowerblue 5px solid;
 
+  text-align: center;
+}
+.nav-link {
+  display: inline;
+  padding: 0 5px;
+}
+.display-3 {
+  margin-top: 10px;
+  padding: 10px 0;
+}
+.mycontainer {
+  display: flex;
+  justify-content: space-between;
+}
+.container-text {
+  text-align: left;
+  font-size: 1em;
+  padding-top: 10px;
+}
+.features-text {
+  text-align: end;
+  margin: 4rem 0;
+  font-size: 2rem;
+}
+button {
+  margin: 0 3px;
+}
+h3 {
+  text-align: left;
+}
+h1 {
+  text-align: center;
+  padding: 15px;
+}
+i {
+  padding: 15px;
+  transform: scale(2);
+}
+input {
+  display: block;
+  margin: auto;
+  padding: 5px;
+  margin: 10px auto;
+}
+li {
+  display: inline;
+}
+div > i {
+  color: cornflowerblue;
+}
+ul {
+  padding-right: 15px;
+  padding-top: 30px;
+}
+html {
+  width: 100vw;
+}
+a {
+  display: inline;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  padding: 5px;
+  font-size: 1em;
+}
+a:hover {
+  color: #eece1a;
+}
 footer {
   text-align: center;
   color: black;
@@ -149,7 +165,13 @@ footer > a {
 }
 @media (max-width: 768px) {
   footer {
-    font-size: 0.5em;
+    font-size: 1em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 1.5em;
   }
   .mycontainer {
     flex-direction: column;
@@ -163,6 +185,13 @@ footer > a {
   .container-text {
     font-size: 1em;
   }
+  .features-text {
+    margin: 2em 0;
+    font-size: 1.2em;
+  }
+  #nav-bar {
+    margin-top: 10px;
+  }
   #products {
     margin: auto;
     flex-direction: column;
@@ -171,13 +200,15 @@ footer > a {
     height: 1200px;
     width: 90vw;
   }
+  #features {
+    font-size: 1rem;
+    width: 95vw;
+    text-align: center;
+  }
   #video {
     margin-top: 15px auto;
     width: 90vw;
     height: auto;
-  }
-  .nav-link {
-    padding: 0;
   }
   #bg1,
   #bg2,
@@ -187,13 +218,12 @@ footer > a {
     margin: 15px 0;
   }
   #contact {
-    font-size: 0.5em;
+    font-size: 0.8em;
     padding: 0;
+    margin: 0;
   }
-  i {
-    display: none;
-  }
-  h2 {
-    font-size: 1.5em;
+
+  ul {
+    padding: 0;
   }
 }
