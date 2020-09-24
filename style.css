@@ -2,29 +2,63 @@
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
 }
+body {
+  margin-top: 100px;
+}
+#bgShadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
 #header {
   background-color: #6400ff;
   width: 100%;
-  height: 17vh;
+  height: 100px;
   position: fixed;
   top: 0;
   z-index: 2;
 }
 #header-img {
-  height: 10vh;
-  border: #6400ff 3px solid;
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  display: inline-block;
+}
+#nav-bar {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
 }
 #features {
-  width: 50vw;
-  margin: auto;
-  padding: 15px;
-  margin: 15px auto;
+  width: 100%;
+  height: 150vh;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/backgroundTrane.png?alt=media&token=337d1e06-460a-4fac-acac-65fbe9926ada");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#features-left {
+  align-self: flex-start;
+}
+#features-middle {
+  align-self: center;
+}
+#features-right {
+  align-self: flex-end;
+}
+#values {
+  height: 100vh;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #video {
-  display: block;
-  margin: auto;
-  margin-top: 2vh;
-  margin-bottom: 2vh;
   height: 60vh;
   width: 70vw;
 }
@@ -32,8 +66,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin: 10vh 0;
   height: 70vh;
+  padding-bottom: 50px;
 }
 #residential {
   height: 100%;
@@ -60,13 +94,13 @@
   justify-content: center;
 }
 #bg1 {
-  background: url(/back1.jpg);
+  background: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/back1.jpg?alt=media&token=1517fc36-2580-4cb5-bdad-c527558a60ca");
 }
 #bg2 {
-  background: url(/back2.jpeg);
+  background: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/back2.jpeg?alt=media&token=42a8d1e2-6c77-44aa-91d0-999173bd1ed1");
 }
 #bg3 {
-  background: url(/back3.jpg);
+  background: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/back3.jpg?alt=media&token=4899e5f2-b354-44ae-bf64-525235c6f5a3");
 }
 #bg1,
 #bg2,
@@ -77,8 +111,24 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  background-color: #141414;
+  font-size: 1.5em;
+  justify-content: center;
+  height: 50vh;
+}
+#contact h2 {
+  font-size: 2.5em;
+  text-decoration: underline;
+  text-align: center;
+}
 .icon-title {
   text-align: left;
+  box-sizing: border-box;
   padding: 5px;
 }
 .product-cont {
@@ -86,21 +136,14 @@
   box-sizing: border-box;
   padding: 5px;
   border: cornflowerblue 5px solid;
-
   text-align: center;
 }
-.nav-link {
-  display: inline;
-  padding: 0 5px;
-}
+
 .display-3 {
   margin-top: 10px;
   padding: 10px 0;
 }
-.mycontainer {
-  display: flex;
-  justify-content: space-between;
-}
+
 .container-text {
   text-align: left;
   font-size: 1em;
@@ -108,8 +151,12 @@
 }
 .features-text {
   text-align: end;
-  margin: 4rem 0;
-  font-size: 2rem;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 15px;
+  font-size: 1.5rem;
+  border-bottom: solid 2px blue;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 button {
   margin: 0 3px;
@@ -123,6 +170,7 @@ h1 {
 }
 i {
   padding: 15px;
+  margin: 5px;
   transform: scale(2);
 }
 input {
@@ -133,13 +181,22 @@ input {
 }
 li {
   display: inline;
+  margin: 0;
+  padding: 0;
 }
 div > i {
   color: cornflowerblue;
 }
 ul {
-  padding-right: 15px;
-  padding-top: 30px;
+  right: 0;
+  height: 100%;
+  align-self: center;
+  margin: 0;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1.2em;
 }
 html {
   width: 100vw;
@@ -150,11 +207,18 @@ a {
   font-weight: 600;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
-  padding: 5px;
+  padding: 3px 0;
+  margin: 0;
   font-size: 1em;
 }
 a:hover {
-  color: #eece1a;
+  color: #fff;
+}
+
+li:hover {
+  border-bottom: 3px black inset;
+  margin-bottom: -3px;
+  box-sizing: border-box;
 }
 footer {
   text-align: center;
@@ -171,13 +235,9 @@ footer > a {
     font-size: 1.5em;
   }
   h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
-  .mycontainer {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+
   .display-4 {
     padding-top: 5vh;
     font-size: 1.5em;
@@ -187,17 +247,18 @@ footer > a {
   }
   .features-text {
     margin: 2em 0;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   #nav-bar {
-    margin-top: 10px;
+    background-color: white;
+    justify-content: center;
   }
   #products {
     margin: auto;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 1200px;
+    height: 200vh;
     width: 90vw;
   }
   #features {
@@ -208,22 +269,43 @@ footer > a {
   #video {
     margin-top: 15px auto;
     width: 90vw;
-    height: auto;
   }
   #bg1,
   #bg2,
   #bg3 {
     height: 30%;
-    width: auto;
+    width: 90%;
     margin: 15px 0;
   }
-  #contact {
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0;
+
+  #header-img {
+    position: absolute;
+    z-index: 0;
   }
 
   ul {
+    position: absolute;
+    color: black;
+    width: 100%;
+    height: 100px;
+    justify-content: space-evenly;
+    z-index: 3;
     padding: 0;
+    margin-top: 18px;
+  }
+  li {
+    font-size: 0.9rem;
+    width: 100%;
+    color: black;
+  }
+  a {
+    color: black;
+    text-align: center;
+  }
+  a:hover {
+    color: black;
+  }
+  li:hover {
+    background-image: linear-gradient(white, #f3f3f3, white);
   }
 }

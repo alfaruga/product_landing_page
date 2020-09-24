@@ -4,52 +4,65 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Trane</title>
-	<script
-	src="https://kit.fontawesome.com/87e4d85b14.js"
-	crossorigin="anonymous"
-  ></script>
+	<script src="https://kit.fontawesome.com/87e4d85b14.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script><head>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 	
 <header id="header">
-		<div class="mycontainer">
-			<img src="/logo.jpg" alt="" id="header-img"><nav id="nav-bar">
+			<nav id="nav-bar">
+			<img src="/logo.jpg" alt="" id="header-img">
 				<ul>
 					<li><a class="nav-link" href="#values">Our values</a></li>
 					<li><a class="nav-link" href="#products">Services</a></li>
 					<li><a class="nav-link" href="#contact">Contact us!</a></li>
 				</ul>
 			</nav>
-		</div>
 </header>
 
 <body>
-	<div style='width: 100%; height: 20vh'></div>
-		<h1 class="display-5">Suscribe to get the best offers!</h1>
+	
+		<h1 class="display-5">Subscribe to get the best offers!</h1>
+
 		<form action="/https://www.freecodecamp.com/email-submit" method="get" id="form">
 			<input type="email" id="email" name="email" placeholder="Please enter your email">
 			<input type="submit" class="button" id="submit">
 		</form>
 		<section id="features">
-			<div class='features-text'>
-			<div class='icon-title'><i class='far fa-snowflake'></i> <em>In TRANE </em></div>
-			<small>We create comfortable, energy efficient indoor environments for commercial and residential applications.</small></div>
-		<div class='features-text'>
-			<div class="icon-title"><i class="fas fa-globe-americas"></i>
-		Sustainability FIRST<br></div>
-		<small>As a world leader in creating comfortable, sustainable, and efficient environments, it’s our responsibility to put the planet first.</small></div>
-		<div class='features-text'>
-			<div class="icon-title"><i class="fas fa-handshake"></i>
-			Growing alongside our partners <br></div>
-			<small>Our solutions are better for the environment and for business. A stronger plan for long-term growth for us and the planet. That means a unique opportunity for investors.</small></div>
+			<div id="bgShadow">
+				<div id="features-left" class='features-text'>
+					<div class='icon-title'>
+						<i class='far fa-snowflake'></i><em>In TRANE </em>
+					</div>
+					<p>We create comfortable, energy efficient indoor environments 
+						for commercial and residential applications.
+					</p>
+				</div>
+			<div id="features-middle" class='features-text'>
+				<div class="icon-title">
+					<i class="fas fa-globe-americas"></i>Sustainability FIRST<br>
+				</div>
+				<p>As a world leader in creating comfortable, sustainable, and efficient 
+					environments, it’s our responsibility to put the planet first.
+				</p>
+			</div>
+			<div id="features-right" class='features-text'>
+				<div class="icon-title">
+					<i class="fas fa-handshake"></i>Growing alongside our partners <br>
+				</div>
+				<p>Our solutions are the best for the environment and for business.
+					A stronger plan for long-term growth for us and the planet.
+					</p></div>
+			</div>
 		</section>
 		<section id="values">
+			<h1 id="videoHeader">The way we make <span style="color: #6400FF; text-shadow: 0 0 20px gold ">great</span> products in <span style="color: #6400FF; text-shadow: 0 0 20px gold ">TRANE</span></h1>
 			<iframe id="video" src="https://www.youtube.com/embed/ykS_MYngVpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
 		</section>
+		<h1 id="videoHeader">Trane's <span style="color: #6400FF; text-shadow: 0 0 20px gold ">Services </span> and <span style="color: #6400FF; text-shadow: 0 0 20px gold ">Products</span></h1>
+
 		<section id="products" >
-				
 			<div id="bg1">
 			<div class="product-cont " id="residential"><h2>RESIDENTIAL</h2><h4>FOR HOMEOWNERS AND BUILDERS</h4>
 					<p>Reliable, energy-efficient, clean air for your home.</p>
@@ -67,12 +80,13 @@
 			</div>
 		</div>
 		</section >
-		<section id="contact" class= "container-fluid p-3 my-3 border bg-dark text-white text-center">
-			
-				<h2>Contact us</h2>
-				<p style="text-align: center;">Tel: 555-8181-8181 <br> Mail: example@domain.com</p>
+		<section id="contact" >
+				<div >
+					<h2>Contact us</h2>
+					<p style="text-align: center;">Tel: 555-8181-8181 <br> Mail: example@domain.com</p>
+				</div>
 		</section>
-	<footer>2020© Alexis Ruiz García | Contáctame: <a href="https://github.com/alfaruga"><i class='fab fa-github'></i>Mi perfil de GitHub</a> email: alfaruga@gmail.com </footer>
+	<footer>Alexis Ruiz García 2020© <br>Contáctame: <a href="https://github.com/alfaruga"><i class='fab fa-github'></i></a> <a href="mailto:alfaruga@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a></footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
