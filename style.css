@@ -211,9 +211,6 @@ a {
   margin: 0;
   font-size: 1em;
 }
-a:hover {
-  color: #fff;
-}
 
 li:hover {
   border-bottom: 3px black inset;
