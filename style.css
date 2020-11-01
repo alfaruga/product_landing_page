@@ -35,7 +35,7 @@ body {
   height: 100px;
   justify-content: space-between;
 }
-#form {
+#myForm {
   margin: auto;
   display: flex;
   flex-direction: column;

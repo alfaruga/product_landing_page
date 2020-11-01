@@ -11,7 +11,7 @@
 	<script>
 		function SubForm (){
 			$.ajax({
-				url:"https://api.apispreadsheets.com/data/2836/",
+				url:"https://api.apispreadsheets.com/data/2832/",
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
@@ -42,21 +42,9 @@
 <body>
 	
 		<h1 class="display-5">Reciba información sobre alguno de nuestros equipos más populares</h1>
+		
 		<form id="myForm">
-			<label>email</label>
-			<input name="email" />
-			<br/>
-			<label>producto</label>
-			<input name="producto" />
-			<br/>
-			<label>mensaje</label>
-			<input name="mensaje" />
-			<br/>
-		</form>
-		<button onclick='SubForm()'>Submit</button>
-		<form id="form">
 			<input type="email" id="email" name="email" placeholder="Por favor escriba su correo">
-			
 			<select name="producto">
 				<option>Seleccione el equipo de su interés</option>
 				<optgroup label ="Preparación de muestras y análisis rápidos">
@@ -108,7 +96,7 @@
 			</select>
 			<textarea name="mensaje" placeholder="Por favor indique su empresa, la aplicación y los parámetros analíticos más relevantes"></textarea>
 		</form>
-		<button onclick="SubForm()" class="button" id="submit" value="Enviar">Enviar</button>
+		<button onclick="SubForm()" class="button" id="submit">Enviar</button>
 
 		
 		
@@ -171,7 +159,6 @@
 		</section>
 	<footer>Alexis Ruiz García 2020© <br><a href="https://github.com/alfaruga"><i class='fab fa-github'></i></a> <a href="mailto:alfaruga@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a> <a href="https://www.linkedin.com/in/alexis-ruiz-garcia-a701351b7/" target="_blank"><i class="fab fa-linkedin"></i></a></footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </html>
