@@ -14,8 +14,8 @@ body {
   box-sizing: border-box;
 }
 #header {
-  background-color: #6400ff;
-  width: 100%;
+  background-color: rgb(235, 4, 4);
+  width: 100vw;
   height: 100px;
   position: fixed;
   top: 0;
@@ -31,6 +31,14 @@ body {
   display: flex;
   height: 100px;
   justify-content: space-between;
+}
+#form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 #features {
   width: 100%;
@@ -51,8 +59,8 @@ body {
   align-self: flex-end;
 }
 #values {
-  height: 100vh;
-  margin: 40px;
+  height: 80vh;
+  background-color: #141414;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -61,6 +69,9 @@ body {
 #video {
   height: 60vh;
   width: 70vw;
+}
+#videoHeader {
+  color: white;
 }
 #products {
   display: flex;
@@ -73,7 +84,7 @@ body {
   height: 100%;
   display: flex;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   flex-direction: column;
   justify-content: center;
 }
@@ -81,7 +92,7 @@ body {
   height: 100%;
   display: flex;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   flex-direction: column;
   justify-content: center;
 }
@@ -89,18 +100,18 @@ body {
   height: 100%;
   display: flex;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   flex-direction: column;
   justify-content: center;
 }
 #bg1 {
-  background: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/back1.jpg?alt=media&token=1517fc36-2580-4cb5-bdad-c527558a60ca");
+  background: url("https://firebasestorage.googleapis.com/v0/b/marcapersonal-33db5.appspot.com/o/CL.jpeg?alt=media&token=86530bac-df4c-4286-9c1f-31aaa67c12ed");
 }
 #bg2 {
-  background: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/back2.jpeg?alt=media&token=42a8d1e2-6c77-44aa-91d0-999173bd1ed1");
+  background: url("https://firebasestorage.googleapis.com/v0/b/marcapersonal-33db5.appspot.com/o/ELEMENTALBG2.jpg?alt=media&token=76e2968e-8100-4eca-bbad-300036ae56ec");
 }
 #bg3 {
-  background: url("https://firebasestorage.googleapis.com/v0/b/mi-portafolio-alfaruga.appspot.com/o/back3.jpg?alt=media&token=4899e5f2-b354-44ae-bf64-525235c6f5a3");
+  background: url("https://firebasestorage.googleapis.com/v0/b/marcapersonal-33db5.appspot.com/o/marss6.jpg?alt=media&token=346a56d9-b9bc-422b-930d-4705fb5c0ca1");
 }
 #bg1,
 #bg2,
@@ -135,15 +146,13 @@ body {
   width: 100%;
   box-sizing: border-box;
   padding: 5px;
-  border: cornflowerblue 5px solid;
+  border: rgb(235, 4, 4) 5px solid;
   text-align: center;
 }
-
 .display-3 {
   margin-top: 10px;
   padding: 10px 0;
 }
-
 .container-text {
   text-align: left;
   font-size: 1em;
@@ -155,8 +164,12 @@ body {
   width: 50%;
   margin: 15px;
   font-size: 1.5rem;
-  border-bottom: solid 2px blue;
+  border-bottom: solid 2px rgb(235, 4, 4);
   background-color: rgba(255, 255, 255, 0.5);
+}
+.catalogo {
+  background-color: red;
+  font-size: 1.5em;
 }
 button {
   margin: 0 3px;
@@ -185,7 +198,7 @@ li {
   padding: 0;
 }
 div > i {
-  color: cornflowerblue;
+  color: rgb(235, 4, 4);
 }
 ul {
   right: 0;
@@ -209,9 +222,10 @@ a {
   color: #fff;
   padding: 3px 0;
   margin: 0;
-  font-size: 1em;
 }
-
+a:hover {
+  color: white;
+}
 li:hover {
   border-bottom: 3px black inset;
   margin-bottom: -3px;
@@ -277,6 +291,7 @@ footer > a {
 
   #header-img {
     position: absolute;
+    width: 100%;
     z-index: 0;
   }
 
@@ -292,17 +307,10 @@ footer > a {
   }
   li {
     font-size: 0.9rem;
-    width: 100%;
-    color: black;
+    color: white;
   }
   a {
-    color: black;
+    color: white;
     text-align: center;
-  }
-  a:hover {
-    color: black;
-  }
-  li:hover {
-    background-image: linear-gradient(white, #f3f3f3, white);
   }
 }

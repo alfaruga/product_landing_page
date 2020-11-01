@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Trane</title>
+	<title>Instrumentos y Equipos Falcón-LQI Alexis Ruiz</title>
 	<script src="https://kit.fontawesome.com/87e4d85b14.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script><head>
@@ -12,31 +12,93 @@
 	
 <header id="header">
 			<nav id="nav-bar">
-			<img src="https://firebasestorage.googleapis.com/v0/b/alfarugalibrary.appspot.com/o/logo.jpg?alt=media&token=33fe584f-e36b-4d34-965b-40d67fbc123e" alt="" id="header-img">
+			<img src="https://firebasestorage.googleapis.com/v0/b/marcapersonal-33db5.appspot.com/o/footerIMg.png?alt=media&token=e307b59d-8e96-43eb-9d3f-c77bf644eefd" alt="" id="header-img">
 				<ul>
-					<li><a class="nav-link" href="#values">Our values</a></li>
-					<li><a class="nav-link" href="#products">Services</a></li>
-					<li><a class="nav-link" href="#contact">Contact us!</a></li>
+					<li><a class="nav-link" href="#products">Productos</a></li>
+					<li><a class="nav-link" href="#values">Marcas</a></li>
+					<li><a class="nav-link" href="#contact">Contáctanos</a></li>
 				</ul>
 			</nav>
 </header>
 
 <body>
 	
-		<h1 class="display-5">Subscribe to get the best offers!</h1>
+		<h1 class="display-5">Entérese de nuestras promociones</h1>
 
 		<form action="/https://www.freecodecamp.com/email-submit" method="get" id="form">
-			<input type="email" id="email" name="email" placeholder="Please enter your email">
-			<input type="submit" class="button" id="submit">
+			<input type="email" id="email" name="email" placeholder="Por favor escribe tu correo">
+			<select name="producto">
+				<option>Selecciona tu equipo de interés</option>
+				<optgroup label="Cromatografia de líquidos">
+					<option value="Vanquish">Vanquish</option>
+					<option value="TSQ Quantiva (LC MS/MS)">TSQ Quantiva (LC MS/MS)</option>
+					<option value="Orbitrap Fusion Tribird (LC MS/MS)">Orbitrap Fusion Tribird (LC MS/MS)</option>
+					<option value="Ultimate 3000 UHPLC">Ultimate 3000 UHPLC</option>
+					<option value="Q-Exactive Series (LC MS/MS)">Q-Exactive Series (LC MS/MS)</option>
+				</optgroup>
+				<optgroup label="Cromatografia de gases">
+					<option value="Trace 1300 Series">Trace 1300 Series</option>
+					<option value="TSQ DUO GC-MS/MS">TSQ DUO GC-MS/MS</option>
+					<option value="Automuestreador Triplus RSH">Automuestreador Triplus RSH</option>
+					<option value="ISQ GC-MS">ISQ GC-MS</option>
+					<option value="Q-Exactive GC-MS (HR-MS)">Q-Exactive GC-MS (HR-MS)</option>
+					<option value="TSQ 8000 EVO GC-MS/MS">TSQ 8000 EVO GC-MS/MS</option>
+				</optgroup>
+				<optgroup label ="Cromatografía iónica">
+					<option value="ICS-5000">ICS-5000</option>
+					<option value="Aquion ICS">Aquion ICS</option>
+					<option value="Inregrion HPIC System">Inregrion HPIC System</option>
+					<option value="ICS-4000-HPIC">ICS-4000-HPIC</option>
+					<option value="ASE 350 Series">ASE 350 Series</option>
+					<option value="IC/MS Elemental">IC/MS Elemental</option>
+					<option value="IC-ISQ EC/MS">IC-ISQ EC/MS</option>
+					<option value="IC-MS/MS">IC-MS/MS</option>
+				</optgroup>
+				<optgroup label ="Análisis elemental">
+					<option value="(AA) iCE 3500">(AA) iCE 3500</option>
+					<option value="iCAP RQ ICP-MS">iCAP RQ ICP-MS</option>
+					<option value="iCAP 7000 ICP Series">iCAP 7000 ICP Series</option>
+					<option value="FlashSmart">FlashSmart</option>
+				</optgroup>
+			</select>
+			<input type="submit" class="button" id="submit" value="Enviar">
 		</form>
+		
+		
+		<section id="products" >
+			<div id="bg3">
+				<div class="product-cont " id="supplies"><h2>PREPARACIÓN DE MUESTRAS</h2><p>Digiera sus muestras de manera rápida y eficiente con nuestros equipos <span style="background-color: red;" >EXCLUSIVOS de CEM Corp</span>: digestores microondas y analizadores de ceniza, húmedad y proteína total</p>
+					<a class="catalogo" target="_blank"href="https://firebasestorage.googleapis.com/v0/b/marcapersonal-33db5.appspot.com/o/Cat%C3%A1logo%20Falc%C3%B3n%20Divisi%C3%B3n%20Anal%C3%ADtica%202017-4.pdf?alt=media&token=2ac47e00-e04c-458a-b1d0-23a0c6fb07ec">
+						Catálogo</a></div>
+			</div>
+			<div id="bg1">
+			<div class="product-cont " id="residential"><h2>CROMATOGRAFÍA (CL, CG y CI)</h2>
+					<p>Identifique compuestos desconocidos en matrices de muestras complejas. Cuantifique metabolitos de fármacos, pesticidas, contaminantes o proteínas de bajo nivel con precisión y fiabilidad.
+				</p>
+				<a class="catalogo" target="_blank"href="https://firebasestorage.googleapis.com/v0/b/marcapersonal-33db5.appspot.com/o/Cat%C3%A1logo%20Falc%C3%B3n%20Divisi%C3%B3n%20Anal%C3%ADtica%202017-4.pdf?alt=media&token=2ac47e00-e04c-458a-b1d0-23a0c6fb07ec">
+					Catálogo</a></div>
+			</div>
+			<div id="bg2">
+				<div class="product-cont " id="commercial"><h2>ANÁLISIS ELEMENTAL Y MOLECULAR</h2>
+					<p>Los laboratorios de investigación, de producción y de análisis de todo el mundo confían en nosotros para realizar análisis cualitativos y cuantitativos rápidos y eficaces.</p>
+					<a class="catalogo" target="_blank"href="https://firebasestorage.googleapis.com/v0/b/marcapersonal-33db5.appspot.com/o/Cat%C3%A1logo%20Falc%C3%B3n%20Divisi%C3%B3n%20Anal%C3%ADtica%202017-4.pdf?alt=media&token=2ac47e00-e04c-458a-b1d0-23a0c6fb07ec">
+						Catálogo</a></div>
+				</div>
+		</div>
+		</section >
+		<section id="values">
+			<h1 id="videoHeader">Orgullosamente distribuidores <span style="color: red; text-shadow: 0 0 20px gold ">exclusivos</span> de CEM Corportaion</h1>
+			<iframe id="video" src="https://www.youtube.com/embed/LptMjsym6e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+		</section>
+		<h1 id="videoHeader">Trane's <span style="color: #6400FF; text-shadow: 0 0 20px gold ">Services </span> and <span style="color: #6400FF; text-shadow: 0 0 20px gold ">Products</span></h1>
+
 		<section id="features">
 			<div id="bgShadow">
 				<div id="features-left" class='features-text'>
 					<div class='icon-title'>
-						<i class='far fa-snowflake'></i><em>In TRANE </em>
+						<i class="fas fa-handshake"></i><em>Nuestros socios comerciales</em>
 					</div>
-					<p>We create comfortable, energy efficient indoor environments 
-						for commercial and residential applications.
+					<p>Distribuidor <em>autorizado</em> de <a style="color: black" target="_blank" href="https://www.thermofisher.com/mx/es/home.html">ThermoFisher Scientific &#174;</a> y distribudor exclusivo de <a  target="_blank" style="color: black" href="https://cem.com/en/">CEM corporation </a>  en méxico
 					</p>
 				</div>
 			<div id="features-middle" class='features-text'>
@@ -56,30 +118,7 @@
 					</p></div>
 			</div>
 		</section>
-		<section id="values">
-			<h1 id="videoHeader">The way we make <span style="color: #6400FF; text-shadow: 0 0 20px gold ">great</span> products in <span style="color: #6400FF; text-shadow: 0 0 20px gold ">TRANE</span></h1>
-			<iframe id="video" src="https://www.youtube.com/embed/ykS_MYngVpc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-		</section>
-		<h1 id="videoHeader">Trane's <span style="color: #6400FF; text-shadow: 0 0 20px gold ">Services </span> and <span style="color: #6400FF; text-shadow: 0 0 20px gold ">Products</span></h1>
-
-		<section id="products" >
-			<div id="bg1">
-			<div class="product-cont " id="residential"><h2>RESIDENTIAL</h2><h4>FOR HOMEOWNERS AND BUILDERS</h4>
-					<p>Reliable, energy-efficient, clean air for your home.</p>
-				<button class="btn btn-primary">Visit trane residential</button><button class="btn btn-info">Find a local dealer</button></div>
-			</div>
-			<div id="bg2">
-				<div class="product-cont " id="commercial"><h2>COMMERCIAL</h2><h4>FOR BUSINESS</h4>
-					<p>Making buildings better for people, the environment and the bottom line.</p>
-					<button class="btn btn-primary">Visit trane commercial</button><button class="btn btn-info">Contact a Trane business advisor</button></div>
-				</div>
-<div id="bg3">
-				<div class="product-cont " id="supplies"><h2>SUPPLIES</h2><h4>FOR DEALERS</h4>
-					<p>Parts, supplies and technical information for your research and repair.</p>
-					<button class="btn btn-primary">Go to site</button><button class="btn btn-info">Find a local shop</button></div>
-			</div>
-		</div>
-		</section >
+		
 		<section id="contact" >
 				<div >
 					<h2>Contact us</h2>
