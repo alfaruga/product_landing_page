@@ -15,10 +15,10 @@
 				type:"post",
 				data:$("#myForm").serializeArray(),
 				success: function(){
-					alert("Form Data Submitted :)")
+					alert("Gracias por sus información, nos contactaremos pronto con usted")
 				},
 				error: function(){
-					alert("There was an error :(")
+					alert("Lo sentimos, por favor intente más tarde")
 				}
 			});
 		}
@@ -43,66 +43,78 @@
 	
 		<h1 class="display-5">Reciba información sobre alguno de nuestros equipos más populares</h1>
 		
-		<form id="myForm">
-			<input type="email" id="email" name="email" placeholder="Por favor escriba su correo">
+		<form id="myForm" action="SubForm()">
+			<div class="formDiv">
+				<p>Nombre: <input required name="nombre" placeholder="Su nombre"></p>
+				<p>Correo: <input type="email" id="email" required name="email" placeholder="e-mail"></p>
+			<p>Teléfono: <input type="phone" id="telefono" name="telefono" placeholder="A 10 dígitos"></p>
+		</div>
+		<div class="formDiv">
+			<p>Seleccione el equipo
 			<select name="producto">
-				<option>Seleccione el equipo de su interés</option>
-				<optgroup label ="Preparación de muestras y análisis rápidos">
-					<option value="Mars 6">MARS 6</option>
-					<option value="Discover SP-D y SP">Discover SP-D y SP</option>
-					<option value="Mufla Phoenix">Mufla Phoenix</option>
-					<option value="Sprint">Sprint</option>
-					<option value="Smart 6">Smart 6</option>
-					<option value="ORACLE">ORACLE</option>
-					<option value="Mars one">Mars one</option>
-				</optgroup>
-				<optgroup label="Cromatografia de líquidos">
-					<option value="Vanquish">Vanquish</option>
-					<option value="TSQ Quantiva (LC MS/MS)">TSQ Quantiva (LC MS/MS)</option>
-					<option value="Orbitrap Fusion Tribird (LC MS/MS)">Orbitrap Fusion Tribird (LC MS/MS)</option>
-					<option value="Ultimate 3000 UHPLC">Ultimate 3000 UHPLC</option>
-					<option value="Q-Exactive Series (LC MS/MS)">Q-Exactive Series (LC MS/MS)</option>
-				</optgroup>
-				<optgroup label="Cromatografia de gases">
-					<option value="Trace 1300 Series">Trace 1300 Series</option>
-					<option value="TSQ DUO GC-MS/MS">TSQ DUO GC-MS/MS</option>
-					<option value="Automuestreador Triplus RSH">Automuestreador Triplus RSH</option>
-					<option value="ISQ GC-MS">ISQ GC-MS</option>
-					<option value="Q-Exactive GC-MS (HR-MS)">Q-Exactive GC-MS (HR-MS)</option>
-					<option value="TSQ 8000 EVO GC-MS/MS">TSQ 8000 EVO GC-MS/MS</option>
-				</optgroup>
-				<optgroup label ="Cromatografía iónica">
-					<option value="ICS-5000">ICS-5000</option>
-					<option value="Aquion ICS">Aquion ICS</option>
-					<option value="Inregrion HPIC System">Inregrion HPIC System</option>
-					<option value="ICS-4000-HPIC">ICS-4000-HPIC</option>
-					<option value="ASE 350 Series">ASE 350 Series</option>
-					<option value="IC/MS Elemental">IC/MS Elemental</option>
-					<option value="IC-ISQ EC/MS">IC-ISQ EC/MS</option>
-					<option value="IC-MS/MS">IC-MS/MS</option>
-				</optgroup>
-				<optgroup label ="Análisis elemental">
-					<option value="(AA) iCE 3500">(AA) iCE 3500</option>
-					<option value="iCAP RQ ICP-MS">iCAP RQ ICP-MS</option>
-					<option value="iCAP 7000 ICP Series">iCAP 7000 ICP Series</option>
-					<option value="FlashSmart">FlashSmart (analizador CHNS/O)</option>
-				</optgroup>
-				<optgroup label ="Análisis molecular">
-					<option value="Raman DXR">Raman DXR</option>
-					<option value="FTIR iS10 (iS5 o iS10)">FTIR iS10 (iS5 o iS10)</option>
-					<option value="FTIR iS50">iCAP 7000 ICP Series</option>
-					<option value="FlashSmart">FlashSmart</option>
-				</optgroup>
-			</select>
-			<textarea name="mensaje" placeholder="Por favor indique su empresa, la aplicación y los parámetros analíticos más relevantes"></textarea>
+				<option>Equipo</option>
+					<optgroup label ="Preparación de muestras y análisis rápidos">
+						<option value="Mars 6">MARS 6</option>
+						<option value="Discover SP-D y SP">Discover SP-D y SP</option>
+						<option value="Mufla Phoenix">Mufla Phoenix</option>
+						<option value="Sprint">Sprint</option>
+						<option value="Smart 6">Smart 6</option>
+						<option value="ORACLE">ORACLE</option>
+						<option value="Mars one">Mars one</option>
+					</optgroup>
+					<optgroup label="Cromatografia de líquidos">
+						<option value="Vanquish">Vanquish</option>
+						<option value="TSQ Quantiva (LC MS/MS)">TSQ Quantiva (LC MS/MS)</option>
+						<option value="Orbitrap Fusion Tribird (LC MS/MS)">Orbitrap Fusion Tribird (LC MS/MS)</option>
+						<option value="Ultimate 3000 UHPLC">Ultimate 3000 UHPLC</option>
+						<option value="Q-Exactive Series (LC MS/MS)">Q-Exactive Series (LC MS/MS)</option>
+					</optgroup>
+					<optgroup label="Cromatografia de gases">
+						<option value="Trace 1300 Series">Trace 1300 Series</option>
+						<option value="TSQ DUO GC-MS/MS">TSQ DUO GC-MS/MS</option>
+						<option value="Automuestreador Triplus RSH">Automuestreador Triplus RSH</option>
+						<option value="ISQ GC-MS">ISQ GC-MS</option>
+						<option value="Q-Exactive GC-MS (HR-MS)">Q-Exactive GC-MS (HR-MS)</option>
+						<option value="TSQ 8000 EVO GC-MS/MS">TSQ 8000 EVO GC-MS/MS</option>
+					</optgroup>
+					<optgroup label ="Cromatografía iónica">
+						<option value="ICS-5000">ICS-5000</option>
+						<option value="Aquion ICS">Aquion ICS</option>
+						<option value="Inregrion HPIC System">Inregrion HPIC System</option>
+						<option value="ICS-4000-HPIC">ICS-4000-HPIC</option>
+						<option value="ASE 350 Series">ASE 350 Series</option>
+						<option value="IC/MS Elemental">IC/MS Elemental</option>
+						<option value="IC-ISQ EC/MS">IC-ISQ EC/MS</option>
+						<option value="IC-MS/MS">IC-MS/MS</option>
+					</optgroup>
+					<optgroup label ="Análisis elemental">
+						<option value="(AA) iCE 3500">(AA) iCE 3500</option>
+						<option value="iCAP RQ ICP-MS">iCAP RQ ICP-MS</option>
+						<option value="iCAP 7000 ICP Series">iCAP 7000 ICP Series</option>
+						<option value="FlashSmart">FlashSmart (analizador CHNS/O)</option>
+					</optgroup>
+					<optgroup label ="Análisis molecular">
+						<option value="Raman DXR">Raman DXR</option>
+						<option value="FTIR iS10 (iS5 o iS10)">FTIR iS10 (iS5 o iS10)</option>
+						<option value="FTIR iS50">iCAP 7000 ICP Series</option>
+						<option value="FlashSmart">FlashSmart</option>
+					</optgroup>
+				</select>
+			</p>
+			<p>Información adicional: <textarea name="mensaje" placeholder="Por favor indique su empresa, la aplicación y los parámetros analíticos más relevantes"></textarea></p>
+		</div>
+		<input type="submit" class="button" id="submit" value="Enviar">
 		</form>
-		<button onclick="SubForm()" class="button" id="submit">Enviar</button>
+		<script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
+		<div class="g-recaptcha" data-sitekey="6LcZ190ZAAAAAIbK0QkWYoWdtUQwwEUSb8Fh9bDg"></div>
+
+		
 
 		
 		
 		<section id="products" >
 			<div id="bg3">
-				<div class="product-cont " id="supplies"><h2>PREPARACIÓN DE MUESTRAS</h2><p>Digiera sus muestras de manera rápida y eficiente con nuestros equipos <span style="background-color: red;" >EXCLUSIVOS de CEM Corp</span>: digestores microondas y analizadores de ceniza, húmedad y proteína total</p>
+				<div class="product-cont " id="supplies"><h2>PREPARACIÓN DE MUESTRAS</h2><p>Trate sus muestras de manera rápida y eficiente con nuestros equipos <span style="background-color: red;" >EXCLUSIVOS de CEM Corp</span>: digestores microondas, analizadores de ceniza, húmedad y proteína total</p>
 					<a class="catalogo" target="_blank"href="https://firebasestorage.googleapis.com/v0/b/marcapersonal-33db5.appspot.com/o/Cat%C3%A1logo%20Falc%C3%B3n%20Divisi%C3%B3n%20Anal%C3%ADtica%202017-4.pdf?alt=media&token=2ac47e00-e04c-458a-b1d0-23a0c6fb07ec">
 						Catálogo</a></div>
 			</div>
@@ -144,7 +156,7 @@
 			</div>
 			<div id="features-right" class='features-text'>
 				<div class="icon-title">
-					<i class="fas fa-trophy"></i>>40 años siendo los líderes en del mercado<br>
+					<i class="fas fa-trophy"></i>Más de 40 años siendo los líderes en del mercado<br>
 				</div>
 				<p>Somos la mejor opción de servicios integrales para la industria e investigación brindando confianza y seguridad para nuestros clientes.
 					</p></div>
@@ -154,7 +166,7 @@
 		<section id="contact" >
 				<div >
 					<h2>Cotice ahora mismo</h2>
-					<p style="text-align: center;">Tel: 81-1181-9459<br>Correo:  <a href="mailto:lqi.alexis.ruiz.garcia@gmail.com" target="_blank">lqi.alexis.ruiz.garcia@gmail.com</a></p>
+					<p style="text-align: center;">Lic. Químico Alexis Ruiz <br>Sales manager Monterrey, Sonora y Chihuahua<br> Tel: 81-1181-9459<br>Correo:  <a href="mailto:lqi.alexis.ruiz.garcia@gmail.com" target="_blank">lqi.alexis.ruiz.garcia@gmail.com</a> ó <a href="mailto:alexis.ruiz@falconmx.com" target="_blank">alexis.ruiz@falconmx.com</a></p>
 				</div>
 		</section>
 	<footer>Alexis Ruiz García 2020© <br><a href="https://github.com/alfaruga"><i class='fab fa-github'></i></a> <a href="mailto:alfaruga@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a> <a href="https://www.linkedin.com/in/alexis-ruiz-garcia-a701351b7/" target="_blank"><i class="fab fa-linkedin"></i></a></footer>

@@ -38,14 +38,17 @@ body {
 #myForm {
   margin: auto;
   display: flex;
-  flex-direction: column;
+  background-color: rgba(255, 0, 0, 0.952);
+  padding: 15px;
+  border: 3px solid black;
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
   width: 50%;
 }
 #features {
   width: 100%;
-  height: 150vh;
+  height: 100vh;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/marcapersonal-33db5.appspot.com/o/laboratorybg-min.jpg?alt=media&token=8d82166d-d074-4a48-9ef8-86e3db044dd8");
   background-repeat: no-repeat;
   background-size: cover;
@@ -152,7 +155,9 @@ body {
   background-color: red;
   margin: 15px 0;
   color: white;
-  width: 10vw;
+  width: 150px;
+  font-weight: 900;
+  font-size: 1.2em;
   border-radius: 5px;
   border: 1px solid;
 }
@@ -188,7 +193,14 @@ body {
   background-color: red;
   font-size: 1.5em;
 }
-
+.formDiv {
+  color: white;
+  padding: 15px;
+}
+.formDiv > p {
+  font-weight: 900;
+  font-size: 1.2em;
+}
 h3 {
   text-align: left;
 }
@@ -204,10 +216,11 @@ i {
   transform: scale(2);
 }
 input {
-  display: block;
-  margin: auto;
-  padding: 5px;
-  margin: 10px auto;
+  width: 100%;
+  margin: 10px 0;
+}
+select {
+  width: 100%;
 }
 li {
   display: inline;
@@ -233,7 +246,7 @@ html {
 }
 textarea {
   margin-top: 15px;
-  width: 80%;
+  width: 100%;
   resize: none;
 }
 a {
@@ -283,7 +296,7 @@ footer > a:hover {
   }
   .features-text {
     margin: 2em 0;
-    font-size: 1em;
+    font-size: 0.8em;
   }
   #nav-bar {
     background-color: white;
@@ -319,6 +332,18 @@ footer > a:hover {
     width: 100%;
     z-index: 0;
   }
+  #myForm {
+    flex-direction: column;
+    height: 60vh;
+    justify-content: space-between;
+  }
+  #myForm > div {
+    height: 50%;
+  }
+  .formDiv > p {
+    font-size: 0.75em;
+    margin: 0;
+  }
 
   ul {
     position: absolute;
@@ -337,5 +362,12 @@ footer > a:hover {
   a {
     color: white;
     text-align: center;
+  }
+  input {
+    width: 100%;
+    margin: 10px 0;
+  }
+  select {
+    width: 100%;
   }
 }
