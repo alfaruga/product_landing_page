@@ -4,9 +4,27 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Instrumentos y Equipos Falcón-LQI Alexis Ruiz</title>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+	<script>
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/2836/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+				error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
+	</script>
 	<script src="https://kit.fontawesome.com/87e4d85b14.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script><head>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 	
@@ -23,12 +41,33 @@
 
 <body>
 	
-		<h1 class="display-5">Entérese de nuestras promociones</h1>
-
-		<form action="/https://www.freecodecamp.com/email-submit" method="get" id="form">
-			<input type="email" id="email" name="email" placeholder="Por favor escribe tu correo">
+		<h1 class="display-5">Reciba información sobre alguno de nuestros equipos más populares</h1>
+		<form id="myForm">
+			<label>email</label>
+			<input name="email" />
+			<br/>
+			<label>producto</label>
+			<input name="producto" />
+			<br/>
+			<label>mensaje</label>
+			<input name="mensaje" />
+			<br/>
+		</form>
+		<button onclick='SubForm()'>Submit</button>
+		<form id="form">
+			<input type="email" id="email" name="email" placeholder="Por favor escriba su correo">
+			
 			<select name="producto">
-				<option>Selecciona tu equipo de interés</option>
+				<option>Seleccione el equipo de su interés</option>
+				<optgroup label ="Preparación de muestras y análisis rápidos">
+					<option value="Mars 6">MARS 6</option>
+					<option value="Discover SP-D y SP">Discover SP-D y SP</option>
+					<option value="Mufla Phoenix">Mufla Phoenix</option>
+					<option value="Sprint">Sprint</option>
+					<option value="Smart 6">Smart 6</option>
+					<option value="ORACLE">ORACLE</option>
+					<option value="Mars one">Mars one</option>
+				</optgroup>
 				<optgroup label="Cromatografia de líquidos">
 					<option value="Vanquish">Vanquish</option>
 					<option value="TSQ Quantiva (LC MS/MS)">TSQ Quantiva (LC MS/MS)</option>
@@ -58,11 +97,19 @@
 					<option value="(AA) iCE 3500">(AA) iCE 3500</option>
 					<option value="iCAP RQ ICP-MS">iCAP RQ ICP-MS</option>
 					<option value="iCAP 7000 ICP Series">iCAP 7000 ICP Series</option>
+					<option value="FlashSmart">FlashSmart (analizador CHNS/O)</option>
+				</optgroup>
+				<optgroup label ="Análisis molecular">
+					<option value="Raman DXR">Raman DXR</option>
+					<option value="FTIR iS10 (iS5 o iS10)">FTIR iS10 (iS5 o iS10)</option>
+					<option value="FTIR iS50">iCAP 7000 ICP Series</option>
 					<option value="FlashSmart">FlashSmart</option>
 				</optgroup>
 			</select>
-			<input type="submit" class="button" id="submit" value="Enviar">
+			<textarea name="mensaje" placeholder="Por favor indique su empresa, la aplicación y los parámetros analíticos más relevantes"></textarea>
 		</form>
+		<button onclick="SubForm()" class="button" id="submit" value="Enviar">Enviar</button>
+
 		
 		
 		<section id="products" >
@@ -87,45 +134,42 @@
 		</div>
 		</section >
 		<section id="values">
-			<h1 id="videoHeader">Orgullosamente distribuidores <span style="color: red; text-shadow: 0 0 20px gold ">exclusivos</span> de CEM Corportaion</h1>
+			<h1 id="videoHeader">Orgullosamente distribuidores <span style="text-shadow: 0 0 20px gold">exclusivos</span> de CEM Corporation</h1>
 			<iframe id="video" src="https://www.youtube.com/embed/LptMjsym6e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" ></iframe>
 		</section>
-		<h1 id="videoHeader">Trane's <span style="color: #6400FF; text-shadow: 0 0 20px gold ">Services </span> and <span style="color: #6400FF; text-shadow: 0 0 20px gold ">Products</span></h1>
-
+		<h1 id="videoHeader" style="color: black">En <span style="color: red"> Falcón</span> nuestro compromiso es exceder sus expectativas </h1>
 		<section id="features">
 			<div id="bgShadow">
 				<div id="features-left" class='features-text'>
 					<div class='icon-title'>
 						<i class="fas fa-handshake"></i><em>Nuestros socios comerciales</em>
 					</div>
-					<p>Distribuidor <em>autorizado</em> de <a style="color: black" target="_blank" href="https://www.thermofisher.com/mx/es/home.html">ThermoFisher Scientific &#174;</a> y distribudor exclusivo de <a  target="_blank" style="color: black" href="https://cem.com/en/">CEM corporation </a>  en méxico
+					<p>Distribuidor <em>autorizado</em> de <a style="color: black" target="_blank" href="https://www.thermofisher.com/mx/es/home.html">ThermoFisher Scientific &#174;</a> y distribudor exclusivo de <a  target="_blank" style="color: black" href="https://cem.com/en/">CEM corporation &#174;</a>  en méxico
 					</p>
 				</div>
 			<div id="features-middle" class='features-text'>
 				<div class="icon-title">
-					<i class="fas fa-globe-americas"></i>Sustainability FIRST<br>
+					<i class="fas fa-globe-americas"></i>Servicio de clase mundial<br>
 				</div>
-				<p>As a world leader in creating comfortable, sustainable, and efficient 
-					environments, it’s our responsibility to put the planet first.
+				<p>No somos revendedores, <span style="background-color: yellow;">nosotros SÍ ofrecemos servicios</span> de instalación, programas de mantenimiento preventivo y correctivo, desarrollo de métodos de trabajo, soluciones de software y capacitación en aplicaciones
 				</p>
 			</div>
 			<div id="features-right" class='features-text'>
 				<div class="icon-title">
-					<i class="fas fa-handshake"></i>Growing alongside our partners <br>
+					<i class="fas fa-trophy"></i>>40 años siendo los líderes en del mercado<br>
 				</div>
-				<p>Our solutions are the best for the environment and for business.
-					A stronger plan for long-term growth for us and the planet.
+				<p>Somos la mejor opción de servicios integrales para la industria e investigación brindando confianza y seguridad para nuestros clientes.
 					</p></div>
 			</div>
 		</section>
 		
 		<section id="contact" >
 				<div >
-					<h2>Contact us</h2>
-					<p style="text-align: center;">Tel: 555-8181-8181 <br> Mail: example@domain.com</p>
+					<h2>Cotice ahora mismo</h2>
+					<p style="text-align: center;">Tel: 81-1181-9459<br>Correo:  <a href="mailto:lqi.alexis.ruiz.garcia@gmail.com" target="_blank">lqi.alexis.ruiz.garcia@gmail.com</a></p>
 				</div>
 		</section>
-	<footer>Alexis Ruiz García 2020© <br>Contáctame: <a href="https://github.com/alfaruga"><i class='fab fa-github'></i></a> <a href="mailto:alfaruga@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a></footer>
+	<footer>Alexis Ruiz García 2020© <br><a href="https://github.com/alfaruga"><i class='fab fa-github'></i></a> <a href="mailto:alfaruga@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a> <a href="https://www.linkedin.com/in/alexis-ruiz-garcia-a701351b7/" target="_blank"><i class="fab fa-linkedin"></i></a></footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
