@@ -43,7 +43,7 @@
 	
 		<h1 class="display-5">Reciba información sobre alguno de nuestros equipos más populares</h1>
 		
-		<form id="myForm" onsubmit="SubForm()">
+		<form id="myForm">
 			<div class="formDiv">
 				<p>Nombre: <input required name="nombre" placeholder="Su nombre"></p>
 				<p>Correo: <input type="email" id="email" required name="email" placeholder="e-mail"></p>
@@ -102,11 +102,11 @@
 				</select>
 			</p>
 			<p>Información adicional: <textarea name="mensaje" placeholder="Por favor indique su empresa, la aplicación y los parámetros analíticos más relevantes"></textarea></p>
-		</div>
-		<input type="submit" class="button" id="submit" value="Enviar">
-		</form>
-		<script src='https://www.google.com/recaptcha/api.js?hl=es'></script>
 		<div class="g-recaptcha" data-sitekey="6LcZ190ZAAAAAOLWpkYle0oTw7QbQqWeNXVV18PU"></div>
+
+		</div>
+		</form>
+		<button onclick="SubForm()" class="button" id="submit">Enviar</button>
 
 		
 
@@ -166,7 +166,7 @@
 		<section id="contact" >
 				<div >
 					<h2>Cotice ahora mismo</h2>
-					<p style="text-align: center;">Lic. Químico Alexis Ruiz <br>Sales manager Monterrey, Sonora y Chihuahua<br> Tel: 81-1181-9459<br>Correo:  <a href="mailto:lqi.alexis.ruiz.garcia@gmail.com" target="_blank">lqi.alexis.ruiz.garcia@gmail.com</a> ó <a href="mailto:alexis.ruiz@falconmx.com" target="_blank">alexis.ruiz@falconmx.com</a></p>
+					<p style="text-align: center;">Lic. Químico Alexis Ruiz <br>Sales manager Monterrey, Sonora y Chihuahua<br> Tel/Whatsapp: <a href="tel:8111819459">81-1181-9459</a></p>
 				</div>
 		</section>
 	<footer>Alexis Ruiz García 2020© <br><a href="https://github.com/alfaruga"><i class='fab fa-github'></i></a> <a href="mailto:alfaruga@gmail.com" target="_blank"><i class="fas fa-envelope-open-text"></i></a> <a href="https://www.linkedin.com/in/alexis-ruiz-garcia-a701351b7/" target="_blank"><i class="fab fa-linkedin"></i></a></footer>
