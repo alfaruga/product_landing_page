@@ -11,6 +11,8 @@ body {
 #bgShadow {
   width: 100%;
   height: 100%;
+  padding: 15px;
+  margin: 0;
   background-color: rgba(255, 255, 255, 0.3);
   display: flex;
   flex-direction: column;
@@ -47,7 +49,7 @@ body {
   width: 50%;
 }
 #features {
-  width: 100%;
+  width: 95vw;
   height: 100vh;
   background-image: url("https://firebasestorage.googleapis.com/v0/b/marcapersonal-33db5.appspot.com/o/laboratorybg-min.jpg?alt=media&token=8d82166d-d074-4a48-9ef8-86e3db044dd8");
   background-repeat: no-repeat;
@@ -142,9 +144,12 @@ body {
   width: 100%;
 }
 #contact h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   text-decoration: underline;
   text-align: center;
+}
+.hide {
+  display: none;
 }
 .icon-title {
   text-align: left;
@@ -182,12 +187,13 @@ body {
 }
 .features-text {
   text-align: end;
-  box-sizing: border-box;
-  width: 50%;
-  margin: 15px;
-  font-size: 1.5rem;
+  width: 60%;
+  height: 25%;
+  font-size: 1.2rem;
+  margin: 5vh 0;
   border-bottom: solid 2px rgb(235, 4, 4);
   background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
 }
 .catalogo {
   background-color: red;
@@ -278,7 +284,7 @@ footer > a:hover {
 }
 @media (max-width: 768px) {
   footer {
-    font-size: 1em;
+    font-size: 0.8em;
   }
   h2 {
     font-size: 1.5em;
@@ -295,8 +301,8 @@ footer > a:hover {
     font-size: 1em;
   }
   .features-text {
-    margin: 2em 0;
-    font-size: 0.8em;
+    margin: 10px 0;
+    font-size: 3vw;
   }
   #nav-bar {
     background-color: white;
